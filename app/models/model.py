@@ -16,6 +16,12 @@ def equation(weeksAmount, tuition):
     return weekly
 # print("You need to save " + str(round(weekly, 2)) + " every week.")
 
+def neededAid(tuition, weeksleft, contribution):
+    totalContribution = int(weeksleft) * int(contribution)
+    extraMoney = int(tuition) - int(totalContribution)
+    return extraMoney
+
+
 
 
 
